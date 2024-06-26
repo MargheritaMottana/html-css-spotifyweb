@@ -42,24 +42,85 @@
     </header>
 
     <!-- Footer -->
-    <footer>
+    <footer class="myrow">
 
-        <div class="myrow">
+        <!-- tasti sx -->
+        <section class="mycol-1-3">
 
-            <!-- tasti sx -->
-            <div class="mycol-1-3">
+            <div class="myrow current-song">
 
-                <!-- tasti centro -->
+                <!-- cover -->
+                <div class="song-cover">
+                    <img src="./img/nneka.jpg" alt="Nneka">
+                </div>
+
+                <!-- Cantante e canzone -->
+                <div class="singer-song">
+                    <div>
+                        <a class="singer-name" href="https://open.spotify.com/artist/0VX4MyYhvKRtU1AZUVGLUZ">
+                            Nneka
+                        </a>
+                    </div>
+                    <div>
+                        <a class="song-name" href="https://open.spotify.com/track/5LbrLmOI7GUG9v5b7S5qyO">
+                            Heartbeat
+                        </a>
+                    </div>
+                </div>
+
+                <!-- icone like e folder -->
+                <div>
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-folder"></i>
+                </div>
+
             </div>
-            <div class="mycol-1-3">
 
-                <!-- tasti dx -->
+        </section>
+
+        <!-- tasti centro -->
+        <section class="mycol-1-3">
+
+            <div class="control-buttons">
+
+                <button> <i class="fa-solid fa-shuffle"></i> </button>
+                <button> <i class="fa-solid fa-backward-step"></i> </button>
+                <button class="play"> <i class="fa-regular fa-circle-play"></i> </button>
+                <button> <i class="fa-solid fa-forward-step"></i> </button>
+                <button> <i class="fa-solid fa-rotate-right"></i> </button>
+
             </div>
-            <div class="mycol-1-3">
+
+            <div class="timing">
+                <p>0:25</p>
+
+                <div class="line-time">
+                    <div class="line-animation"></div>
+                </div>
+
+                <p>3:11</p>
+            </div>
+
+        </section>
+
+        <!-- tasti dx -->
+        <section class="mycol-1-3">
+
+            <div class="volume">
+
+                <i class="fa-solid fa-list-ul"></i>
+                <i class="fa-solid fa-display"></i>
+                <i class="fa-solid fa-volume-high"></i>
+
+                <div class="line-volume">
+                    <div class="line-animation"></div>
+                </div>
 
             </div>
 
-        </div>
+        </section>
+
+
 
     </footer>
 

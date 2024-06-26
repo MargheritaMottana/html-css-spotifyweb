@@ -20,6 +20,15 @@ button {
     cursor: pointer;
 }
 
+.mycol-1-3 {
+    width: calc(100% / 3);
+}
+
+.myrow {
+    display: flex;
+    align-items: center;
+}
+
 /* 
 header
 */
@@ -53,3 +62,115 @@ header .upgrade-btn:hover {
 /* 
 footer
 */
+
+footer {
+    color: white;
+    background-color: #282828;
+    height: 70px;
+}
+
+footer .myrow {
+    justify-content: space-between;
+}
+
+/* sx */
+
+footer .current-song {
+    justify-content: start;
+}
+
+footer .current-song>* {
+    margin: 0 10px;
+}
+
+.current-song i {
+    color: #707070;
+    margin-right: 10px;
+}
+
+footer .song-cover {
+    width: 50px;
+}
+
+footer .singer-song {
+    font-size: small;
+}
+
+footer .singer-song a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+footer .song-name {
+    color: #707070;
+}
+
+footer .singer-name {
+    color: white;
+    font-weight: bold;
+}
+
+/* center */
+
+footer .control-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .control-buttons>* {
+    color: white;
+    border: none;
+    background-color: transparent;
+}
+
+footer .timing {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+footer .timing .line-time {
+    width: 80%;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #5A5A5A;
+}
+
+footer .timing .line-animation {
+    width: 30%;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #c1c1c1;
+}
+
+footer .timing {
+    font-size: small;
+}
+
+/* dx */
+
+footer .volume {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: small;
+}
+
+footer .volume>* {
+    margin: 10px;
+}
+
+footer .volume .line-volume {
+    width: 20%;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #5A5A5A;
+}
+
+footer .volume .line-animation {
+    width: 40%;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #c1c1c1;
+}
