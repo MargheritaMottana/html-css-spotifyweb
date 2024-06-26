@@ -20,13 +20,18 @@ button {
     cursor: pointer;
 }
 
+.myrow {
+    display: flex;
+    align-items: center;
+}
+
 .mycol-1-3 {
     width: calc(100% / 3);
 }
 
-.myrow {
-    display: flex;
-    align-items: center;
+.mycol-200 {
+    width: 200px;
+    background-color: blueviolet;
 }
 
 /* 
@@ -88,6 +93,10 @@ footer .current-song>* {
     margin-right: 10px;
 }
 
+.current-song i:hover {
+    color: white;
+}
+
 footer .song-cover {
     width: 50px;
 }
@@ -103,6 +112,11 @@ footer .singer-song a {
 
 footer .song-name {
     color: #707070;
+}
+
+footer .song-name:hover {
+    color: white;
+    text-decoration: underline;
 }
 
 footer .singer-name {
@@ -144,6 +158,11 @@ footer .timing .line-animation {
     background-color: #c1c1c1;
 }
 
+footer .timing .line-animation:hover {
+    background-color: greenyellow;
+    height: 3.5px;
+}
+
 footer .timing {
     font-size: small;
 }
@@ -173,4 +192,9 @@ footer .volume .line-animation {
     height: 3px;
     border-radius: 20px;
     background-color: #c1c1c1;
+}
+
+footer .volume .line-animation:hover {
+    background-color: greenyellow;
+    height: 3.5px;
 }
