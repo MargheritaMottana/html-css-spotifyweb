@@ -16,7 +16,8 @@ img {
     width: 100%;
 }
 
-button {
+button,
+a {
     cursor: pointer;
 }
 
@@ -38,18 +39,100 @@ Section Music
     display: flex;
 }
 
-
 /* 
 Aside
- */
+*/
 
+/* general */
 aside {
     width: 200px;
+    color: #5A5A5A;
     background-color: black;
+    padding: 20px;
+}
+
+aside>* {
+    margin-bottom: 10px;
 }
 
 aside .logo img {
     width: 100px;
+    margin-bottom: 20px;
+}
+
+aside li {
+    padding: 5px 0;
+}
+
+.hover-icon:hover {
+    color: white;
+    font-weight: 600;
+}
+
+/* aside links */
+aside {
+    font-size: small;
+}
+
+aside ul {
+    list-style: none;
+}
+
+aside li a {
+    display: inline-block;
+    color: #5A5A5A;
+    text-decoration: none;
+}
+
+aside li .home {
+    color: white;
+}
+
+/* aside playlist */
+.overflow {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+.aside-playlist>* {
+    margin-bottom: 15px;
+}
+
+.aside-playlist p:first-child {
+    color: white;
+    font-weight: bold;
+}
+
+.crea-playlist i {
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+/* aside account */
+
+.account {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+
+.account p:first-child {
+    margin-bottom: 10px;
+}
+
+.account i {
+    margin-right: 10px;
+}
+
+.account hr {
+    border-color: #5A5A5A;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.account-name {
+    color: white;
+    font-weight: bold;
 }
 
 /* 
@@ -79,7 +162,7 @@ main {
     transition: all 0.2s linear;
 }
 
-.sticky-element .upgrade-btn:hover {
+.upgrade-btn:hover {
     transform: scale(1.1);
 }
 
