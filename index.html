@@ -34,16 +34,21 @@
                 <a href="#">
                     <img src="./img/logo.svg" alt="Spotify">
                 </a>
+
+                <a class="logo-small" href="#">
+                    <img src="./img/logo-small.svg" alt="Spotify">
+                </a>
             </span>
 
-            <!-- aside links -->
+            <!-- links -->
             <nav>
                 <ul class="fa-ul">
                     <li>
                         <a class="home hover-icon" href="#">
                             <span class="fa-li">
                                 <i class="fa-solid fa-house"></i>
-                            </span> Home
+                            </span>
+                            <span class="links-text"> Home </span>
                         </a>
                     </li>
 
@@ -51,7 +56,8 @@
                         <a class="hover-icon" href="#">
                             <span class="fa-li">
                                 <i class="fa-solid fa-magnifying-glass"></i>
-                            </span> Cerca
+                            </span>
+                            <span class="links-text"> Cerca </span>
                         </a>
                     </li>
 
@@ -59,7 +65,8 @@
                         <a class="hover-icon" href="#">
                             <span class="fa-li">
                                 <i class="fa-solid fa-lines-leaning"></i>
-                            </span> La tua libreria
+                            </span>
+                            <span class="links-text"> La tua libreria </span>
                         </a>
                     </li>
                 </ul>
@@ -168,14 +175,14 @@
             <div class="account">
                 <p class="hover-icon">
                     <i class="fa-solid fa-circle-arrow-down"></i>
-                    Install app
+                    <span class="links-text"> Install app </span>
                 </p>
 
                 <hr>
 
                 <p class="account-name">
                     <i class="fa-regular fa-circle-user fa-2xl"></i>
-                    Margherita M.
+                    <span class="links-text"> Margherita M. </span>
                 </p>
             </div>
 
@@ -220,18 +227,100 @@
                 </nav>
             </section>
 
-            <!-- container sezioni musicali -->
+            <!-- Sezioni musicali -->
 
             <!-- 1a sezione -->
-            <section class="main-playlist">
+            <section class="container-main">
+
+                <h2> Recently Played </h2>
+
+                <div class="myrow-main">
+
+                    <div class="mycol-main">
+                        <a href="#"> <img src="./img/metal_lifting.jpg" alt="metal"> </a>
+                        <a class="playlist-title" href="#"> Heavy Metal </a>
+                        <a class="subtitle" href="#"> Subtitle </a>
+                    </div>
+
+                    <div class="mycol-main">
+                        <a href="#"> <img src="./img/stranger.jpeg" alt="stranger things"> </a>
+                        <a class="playlist-title" href="#"> Stranger Things, Vol.1 (a Netflix original series
+                            soundtrack) </a>
+                        <a class="subtitle" href="#"> Kyle Dixon & Michael Stein </a>
+                    </div>
+
+                    <div class="mycol-main">
+                        <a href="#"> <img src="./img/aquietplace.jpeg" alt="stranger things"> </a>
+                        <a class="playlist-title" href="#"> A quiet place </a>
+                        <a class="subtitle" href="#"> Subtitle </a>
+                    </div>
+
+                    <div class="mycol-main">
+                        <a href="#"> <img src="./img/split.jpeg" alt="stranger things"> </a>
+                        <a class="playlist-title" href="#"> Split </a>
+                        <a class="subtitle" href="#"> Subtitle </a>
+                    </div>
+
+                    <div class="mycol-main">
+                        <a href="#"> <img src="./img/cure.jpeg" alt="stranger things"> </a>
+                        <a class="playlist-title" href="#"> A cure for wellness </a>
+                        <a class="subtitle" href="#"> Subtitle </a>
+                    </div>
+
+                    <div class="mycol-main">
+                        <a href="#"> <img src="./img/sinister.jpeg" alt="stranger things"> </a>
+                        <a class="playlist-title" href="#"> Sinister </a>
+                        <a class="subtitle" href="#"> Subtitle </a>
+                    </div>
+
+                </div>
+
             </section>
 
             <!-- 2a sezione -->
-            <section class="main-playlist">
+            <section class="container-main">
+
+                <h2> Creato per Margherita M. </h2>
+
+                <p class="subtitle"> Più ascolti, più accurati saranno i suggerimenti. </p>
+
+                <div class="myrow-main">
+
+                    <div class="mycol-main">
+                        <a href="#"> <img src="./img/radar.jpeg" alt="Radar"> </a>
+                        <a class="playlist-title" href="#"> Release Radar </a>
+                    </div>
+
+                    <div class="mycol-main">
+                        <a href="#"> <img src="./img/mixdaily.jpeg" alt="Daily Mix"> </a>
+                        <a class="playlist-title" href="#"> Daily Mix 1 </a>
+                    </div>
+
+                </div>
+
             </section>
 
             <!-- 3a sezione -->
-            <section class="main-playlist">
+            <section class="container-main">
+
+                <h2> Artisti più popolari </h2>
+
+                <p class="subtitle"> Più ascolti, più accurati saranno i suggerimenti. </p>
+
+                <div class="myrow-main">
+
+                    <div class="mycol-main">
+                        <a href="#"> <img class="round-image" src="./img/youg.jpeg" alt="Lana del Rey"> </a>
+                        <a class="playlist-title" href="#"> Lana del Rey </a>
+                    </div>
+
+                    <div class="mycol-main">
+                        <a href="#"> <img class="round-image" src="./img/einaudi.jpeg" alt="Einaudi"> </a>
+                        <a class="playlist-title" href="#"> Einaudi </a>
+                    </div>
+
+                </div>
+
             </section>
 
         </main>
@@ -242,7 +331,7 @@
     <footer class="myrow">
 
         <!-- tasti sx -->
-        <section class="mycol-1-3">
+        <section class="mycol-footer">
 
             <div class="myrow current-song">
 
@@ -276,13 +365,13 @@
         </section>
 
         <!-- tasti centro -->
-        <section class="mycol-1-3">
+        <section class="mycol-footer">
 
             <div class="control-buttons">
 
                 <button> <i class="fa-solid fa-shuffle"></i> </button>
                 <button> <i class="fa-solid fa-backward-step"></i> </button>
-                <button class="play"> <i class="fa-regular fa-circle-play"></i> </button>
+                <button class="play"> <i class="fa-regular fa-circle-play fa-2x"></i> </button>
                 <button> <i class="fa-solid fa-forward-step"></i> </button>
                 <button> <i class="fa-solid fa-rotate-right"></i> </button>
 
@@ -301,7 +390,7 @@
         </section>
 
         <!-- tasti dx -->
-        <section class="mycol-1-3">
+        <section class="mycol-footer">
 
             <div class="volume">
 
