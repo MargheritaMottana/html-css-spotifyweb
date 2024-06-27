@@ -29,40 +29,65 @@ button {
     width: calc(100% / 3);
 }
 
-.mycol-200 {
-    width: 200px;
-    background-color: blueviolet;
-}
-
 /* 
-header
+Section Music
 */
 
-header {
-    background-color: black;
+#music {
+    height: calc(100vh - 70px);
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
 }
 
-header .logo img {
+
+/* 
+Aside
+ */
+
+aside {
+    width: 200px;
+    background-color: black;
+}
+
+aside .logo img {
     width: 100px;
 }
 
-header .upgrade-btn {
+/* 
+main "header"
+*/
+
+main {
+    background-color: #141922;
+    width: calc(100% - 200px);
+}
+
+.sticky-element {
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: end;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+}
+
+.upgrade-btn {
     padding: 10px 20px;
     border-radius: 20px;
     color: white;
-    background-color: black;
+    background-color: transparent;
     border: solid 1px white;
     display: inline-block;
     transition: all 0.2s linear;
 }
 
-header .upgrade-btn:hover {
+.sticky-element .upgrade-btn:hover {
     transform: scale(1.1);
 }
+
+/* 
+main playlist
+*/
+
+
 
 /* 
 footer
