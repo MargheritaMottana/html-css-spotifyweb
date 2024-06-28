@@ -40,26 +40,36 @@ Section Music
 ASIDE
 */
 
-/* general */
 aside {
     width: 200px;
     color: #5A5A5A;
     background-color: black;
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
-aside>* {
-    margin-bottom: 10px;
+aside .aside-playlist {
+    flex-grow: 1;
+    overflow: hidden;
+    min-height: 250px;
+}
+
+aside .logo {
+    height: 60px;
 }
 
 aside .logo img {
     width: 100px;
-    margin-bottom: 20px;
 }
 
 aside .logo-small img {
     display: none;
     width: 30px;
+}
+
+/* aside links */
+aside .links {
     margin-bottom: 20px;
 }
 
@@ -67,42 +77,38 @@ aside li {
     padding: 5px 0;
 }
 
-.hover-icon:hover {
-    color: white;
-    font-weight: 600;
-}
-
-/* aside links */
 aside ul {
     list-style: none;
 }
 
 aside li a {
-    display: inline-block;
     color: #5A5A5A;
     text-decoration: none;
+}
+
+aside li a span {
+    color: #5A5A5A;
 }
 
 aside li .home {
     color: white;
 }
 
-/* aside playlist */
+aside .links-icon {
+    width: 20px;
+    padding-left: 5px;
+}
 
+aside .margin-hover:hover {
+    border-left: solid 2px yellowgreen;
+}
+
+/* aside playlist */
 .aside-playlist button {
     color: #5A5A5A;
     background-color: transparent;
     display: inline-block;
     border: none;
-}
-
-.overflow {
-    max-height: 350px;
-    overflow-y: auto;
-}
-
-.aside-playlist>* {
-    margin-bottom: 15px;
 }
 
 .aside-playlist p:first-child {
@@ -112,15 +118,23 @@ aside li .home {
 
 .crea-playlist i {
     margin-right: 5px;
-    margin-top: 10px;
+}
+
+.aside-playlist>* {
+    margin-bottom: 15px;
+}
+
+.overflow {
+    max-height: 350px;
+    overflow-y: auto;
 }
 
 /* aside account */
-
 .account {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+    padding-top: 10px;
 }
 
 .account p:first-child {
@@ -198,6 +212,11 @@ main>* {
 }
 
 /*  main menu */
+section .menu {
+    height: 50px;
+    padding: 10px 0;
+}
+
 section .menu nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -215,10 +234,10 @@ main section.menu ul li {
 
 main section.menu ul li a {
     display: inline-block;
-    padding: 20px 10px 5px 10px;
+    padding: 5px 10px;
     text-decoration: none;
     color: #5A5A5A;
-    transition: width 0.5s ease-in;
+    transition: 0.5s ease-in;
 }
 
 main section.menu ul li:hover {
@@ -237,6 +256,31 @@ main section.menu ul li:hover {
     color: white;
     margin-bottom: 5px;
     text-decoration: none;
+}
+
+main .overlay-container {
+    position: relative;
+}
+
+main .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.mycol-main:hover .overlay {
+    display: flex;
+}
+
+main .overlay.round {
+    border-radius: 50%;
 }
 
 .mycol-main .playlist-title {
@@ -265,6 +309,8 @@ footer {
     color: white;
     background-color: #282828;
     height: 70px;
+    position: relative;
+    z-index: 1;
 }
 
 .mycol-footer {
@@ -394,6 +440,11 @@ footer .volume .line-animation:hover {
     }
 }
 
+.hover-icon:hover {
+    color: white;
+    font-weight: 600;
+}
+
 /* 
 -------------------------------------
             RESPONSIVE
@@ -428,21 +479,8 @@ footer .volume .line-animation:hover {
         width: 50px;
     }
 
-    aside .links-text {
-        display: none;
-    }
-
-    aside .aside-playlist {
-        display: none;
-    }
-
-    aside .account hr {
-        display: none;
-    }
-
-    aside {
+    aside .logo {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
     }
 
@@ -454,8 +492,27 @@ footer .volume .line-animation:hover {
         display: block
     }
 
-    .account i {
-        margin-right: 0;
+    aside .links-text {
+        display: none;
+    }
+
+    aside .aside-playlist>* {
+        display: none;
+    }
+
+    aside .account {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-left: 5px;
+    }
+
+    aside .account>* {
+        margin-top: 20px;
+    }
+
+    aside .account hr {
+        display: none;
     }
 
     /* main */
