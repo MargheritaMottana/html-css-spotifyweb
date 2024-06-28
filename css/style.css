@@ -27,10 +27,6 @@ a {
     align-items: center;
 }
 
-.mycol-footer {
-    width: calc(100% / 3);
-}
-
 /* 
 Section Music
 */
@@ -92,6 +88,14 @@ aside li .home {
 }
 
 /* aside playlist */
+
+.aside-playlist button {
+    color: #5A5A5A;
+    background-color: transparent;
+    display: inline-block;
+    border: none;
+}
+
 .overflow {
     max-height: 350px;
     overflow-y: auto;
@@ -263,8 +267,8 @@ footer {
     height: 70px;
 }
 
-footer .myrow {
-    justify-content: space-between;
+.mycol-footer {
+    width: calc(100% / 3);
 }
 
 /* sx */
@@ -311,13 +315,14 @@ footer .singer-name {
 /* center */
 footer .control-buttons {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     height: 35px;
 }
 
 footer .control-buttons>* {
     padding-top: 10px;
+    margin: 0 15px;
     display: inline-block;
     color: white;
     border: none;
@@ -343,16 +348,19 @@ footer .timing .line-time {
     background-color: #5A5A5A;
 }
 
-footer .timing .line-animation {
-    width: 30%;
+footer .controller {
+    display: none;
+}
+
+footer .timing .line-animation,
+footer .volume .line-animation {
+    width: 40%;
     height: 3px;
     border-radius: 20px;
     background-color: #c1c1c1;
-}
-
-footer .timing .line-animation:hover {
-    background-color: greenyellow;
-    height: 3.5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 /* dx */
@@ -373,16 +381,17 @@ footer .volume .line-volume {
     background-color: #5A5A5A;
 }
 
-footer .volume .line-animation {
-    width: 40%;
-    height: 3px;
-    border-radius: 20px;
-    background-color: #c1c1c1;
-}
+/* hover volume e timing */
 
+footer .timing .line-animation:hover,
 footer .volume .line-animation:hover {
     background-color: greenyellow;
     height: 3.5px;
+    transition: all;
+
+    .controller {
+        display: block;
+    }
 }
 
 /* 
